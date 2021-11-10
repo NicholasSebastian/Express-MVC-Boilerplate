@@ -18,7 +18,7 @@ app.use("/", require("./routes/HomeRouter"));
 
 // Fallback page if requested path does not exist.
 app.use((req, res) => {
-    res.status(404).redirect("/login");
+    res.status(404).redirect("/");
 });
 
 // Listen on the port.
